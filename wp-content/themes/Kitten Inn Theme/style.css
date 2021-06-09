@@ -17,16 +17,17 @@
 }
 
 :root {
-    font-size: 16px;
+    font-size: 16px !important;
 }
 
 :root {
-    --subhead: 1.8rem;
-    --header: 2rem;
-    --header-lg: 4rem;
-    --subhead-sm: 1.2rem;
-    --bodycopy: 0.8rem;
+    --subhead: 1.8rem !important;
+    --header: 2rem !important;
+    --header-lg: 4rem !important;
+    --subhead-sm: 1.2rem !important;
+    --bodycopy: 0.8rem !important;
 }
+
 /* custom font */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
@@ -148,6 +149,7 @@ a {
 .menu-item-21:focus {
     background: var(--light);
 }
+
 .menu-item-21:hover a,
 .menu-item-21:focus a {
     color: var(--pri);
@@ -161,6 +163,7 @@ a {
     background: var(--dark);
     width: 100%;
 }
+
 .current-menu-item a:hover,
 .current-menu-item a:focus {
     color: var(--pri);
@@ -175,6 +178,7 @@ a {
 .close-nav-btn {
     display: none;
 }
+
 /* footer */
 footer {
     width: 100vw;
@@ -342,6 +346,7 @@ footer li a:hover {
     width: 35vw;
     height: 100%;
 }
+
 .about-text-con {
     width: 35vw;
 }
@@ -352,6 +357,7 @@ footer li a:hover {
     padding-bottom: 1rem;
     color: var(--pri);
 }
+
 .about-subhead {
     font-size: var(--subhead-sm);
     font-weight: var(--font-semi);
@@ -394,6 +400,7 @@ footer li a:hover {
 .adopt-con {
     padding: 0 0 5vw 0;
 }
+
 .adopt-img {
     width: 100vw;
     height: 40vw;
@@ -449,6 +456,164 @@ footer li a:hover {
 .adopt-mb-img {
     display: none;
 }
+
+/* shop page */
+
+.woocommerce .products ul,
+.woocommerce ul.products {
+    padding: 0 10vw;
+    min-height: 60vh;
+}
+
+.woocommerce-breadcrumb {
+    display: none;
+}
+
+.page-title {
+    font-size: var(--subhead);
+    color: var(--pri);
+    font-weight: var(--font-semi);
+    padding: 2.5vw 10vw;
+}
+
+.woocommerce-loop-product__title {
+    font-size: var(--subhead-sm);
+    font-weight: var(--font-semi);
+    color: var(--pri);
+}
+
+.price span {
+    color: var(--dark);
+    font-size: var(--bodycopy);
+}
+
+.woocommerce #respond input#submit,
+.woocommerce a.button,
+.woocommerce button.button,
+.woocommerce input.button {
+    background: var(--light);
+    border-radius: 3px;
+    border: 1px solid var(--pri);
+    color: var(--pri);
+    font-size: var(--bodycopy);
+    font-weight: var(--font-medium);
+    transition: .3s ease all;
+}
+
+.woocommerce #respond input#submit:hover,
+.woocommerce a.button:hover,
+.woocommerce button.button:hover,
+.woocommerce input.button:hover,
+.woocommerce #respond input#submit:focus,
+.woocommerce a.button:focus,
+.woocommerce button.button:focus,
+.woocommerce input.button:focus {
+    background: var(--pri);
+    color: var(--light);
+
+}
+
+.cart-collaterals {
+    padding: 0 10vw 5vw;
+
+}
+
+.woocommerce #respond input#submit.alt,
+.woocommerce a.button.alt,
+.woocommerce button.button.alt,
+.woocommerce input.button.alt {
+    background: var(--pri);
+    border-radius: 3px;
+    border: 1px solid var(--pri);
+    transition: all .3s ease;
+}
+
+.woocommerce #respond input#submit.alt:hover,
+.woocommerce a.button.alt:hover,
+.woocommerce button.button.alt:hover,
+.woocommerce input.button.alt:hover,
+.woocommerce #respond input#submit.alt:focus,
+.woocommerce a.button.alt:focus,
+.woocommerce button.button.alt:focus,
+.woocommerce input.button.alt:focus {
+    background: var(--light);
+    color: var(--pri);
+}
+
+.cart_totals h2 {
+    font-size: var(--subhead-sm);
+    font-weight: var(--font-medium);
+}
+
+.woocommerce-Price-amount,
+.amount {
+    font-size: var(--bodycopy);
+    font-weight: var(--font-normal);
+}
+
+.woocommerce table.shop_table tbody th,
+.woocommerce table.shop_table tfoot td,
+.woocommerce table.shop_table tfoot th {
+    font-size: var(--bodycopy);
+    font-weight: var(--font-normal);
+}
+
+.woocommerce table.shop_table {
+    padding: 5vw 10vw;
+}
+
+.input-text,
+.country_select {
+    min-height: 2rem;
+}
+
+.woocommerce-billing-fields {
+    padding: 2.5vw 2.5vw 0 10vw;
+}
+
+.woocommerce-additional-fields {
+    padding: 2.5vw 10vw 0 2.5vw;
+}
+
+#order_review_heading {
+    padding: 2.5vw 0 0 10vw;
+}
+
+.woocommerce-privacy-policy-text {
+    display: none;
+}
+
+.woocommerce-info {
+    padding: 1rem 13vw;
+    border-top-color: var(--pri);
+}
+
+.woocommerce-info::before {
+    padding: 0 10vw;
+    color: var(--pri);
+}
+
+.woocommerce form.checkout_coupon,
+.woocommerce form.login,
+.woocommerce form.register {
+    padding: 1rem 10vw;
+}
+
+#add_payment_method #payment,
+.woocommerce-cart #payment,
+.woocommerce-checkout #payment,
+.woocommerce-error,
+.woocommerce-info,
+.woocommerce-message {
+    background: none;
+}
+
+.woocommerce #payment #place_order,
+.woocommerce-page #payment #place_order {
+    margin-right: 10vw;
+    ;
+}
+
 /* mobile code */
 
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
@@ -552,6 +717,7 @@ footer li a:hover {
         height: 50vh;
         margin-top: 0;
     }
+
     .adopt-text-con {
         height: 40vw;
     }
@@ -672,6 +838,7 @@ footer li a:hover {
     html {
         margin: 0 !important;
     }
+
     /* header.php */
 
     .hamburger-btn {
@@ -761,6 +928,7 @@ footer li a:hover {
     .current-menu-item a {
         color: var(--light);
     }
+
     .nav-con {
         height: 50px;
     }
@@ -782,6 +950,7 @@ footer li a:hover {
         padding: 0;
         z-index: 30;
     }
+
     .menu-item a:hover::after,
     .menu-item a:focus::after,
     .current-menu-item a::after,
@@ -834,6 +1003,7 @@ footer li a:hover {
     .about-con {
         flex-direction: column;
     }
+
     .about-text-con {
         width: 80vw;
     }
@@ -842,10 +1012,12 @@ footer li a:hover {
         font-size: 2rem;
         padding-top: 1rem;
     }
+
     .about-bodycopy {
         width: clamp(45ch, 80vw, 75ch);
         padding-right: 10vw;
     }
+
     .about-img-con {
         flex-direction: column;
         width: 80vw;
@@ -878,6 +1050,7 @@ footer li a:hover {
     .adopt-text-con {
         height: auto;
     }
+
     .adopt-section {
         width: 100%;
     }
