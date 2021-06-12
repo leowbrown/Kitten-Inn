@@ -1,13 +1,63 @@
-/* Custom Variables */
+/* Table Of content
 
-/* colours */
+    9       -       56      Custom Variables
+    57      -       107     Global Edits & Animations 
+    
+    109     -       222     Header.php          Desktop 
+    225     -       267     Footer.php          Desktop
+    270     -       385     Front-page.php      Desktop
+    388     -       456     About.php           Desktop
+    458     -       524     Adopt.php           Desktop
+    527     -       710     WooCommerce         Desktop
+    
+    725     -       756     Header.php          Tablet Large
+    759     -       783     Front-page.php      Tablet Large
+    786     -       800     Footer.php          Tablet Large
+    803     -       835     About.php           Tablet Large
+    838     -       855     Adopt.php           Tablet Large
+    858     -       866     Woocommerce         Tablet Large
+    
+    881     -       912     Header.php          Tablet Small
+    915     -       939     Front-page.php      Tablet Small
+    942     -       956     Footer.php          Tablet Small
+    958     -       991     About.php           Tablet Small
+    994     -       1011    Adopt.php           Tablet Small
+    1014    -       1043    WooCommerce         Tablet Small
+    
+    1062    -       1183    Header.php          Mobile
+    1186    -       1227    Front=page.php      Mobile
+    1230    -       1271    About.php           Mobile
+    1274    -       1311    Adopt.php           Mobile
+    1314    -       1341    Woocommerce         Mobile
+
+*/
+
+
+/*//////////////////////
+///                  ///
+/// custom variables ///
+///                  ///
+//////////////////////*/
+
+/*/////////////
+///         ///
+/// colours ///
+///         ///
+/////////////*/
+
+
 :root {
     --pri: #52b788;
     --light: #fff;
     --dark: #081c15;
 }
 
-/* font-weight */
+/*///////////////////
+///               ///
+/// font defaults ///
+///               ///
+///////////////////*/
+
 :root {
     --font-light: 200;
     --font-normal: 400;
@@ -28,15 +78,17 @@
     --bodycopy: 0.8rem !important;
 }
 
-/* custom font */
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/*/////////////////////////////
+///                         ///
+/// Global resets and edits ///
+///                         ?//
+/////////////////////////////*/
 
 body {
     font-family: 'Poppins', sans-serif;
 }
-
-/* Global Resets */
 
 *,
 ::before,
@@ -63,7 +115,11 @@ a {
     color: var(--dark);
 }
 
-/* global animation */
+/*///////////////////////
+///                   ///
+/// global animations ///
+///                   ///
+///////////////////////*/
 
 .fade-in {
     opacity: 0;
@@ -76,7 +132,11 @@ a {
     transform: translateY(0px);
 }
 
-/* Header.php */
+/*////////////////////////
+///                    ///
+/// Header.php styling ///
+///                    ///
+////////////////////////*/
 
 .nav-con {
     width: 100vw;
@@ -96,6 +156,13 @@ a {
     fill: var(--pri);
     width: 100%;
 }
+
+
+/*//////////////////////////////////
+///                              ///
+/// wordpress list - wp_nav_menu ///
+///                              ///
+//////////////////////////////////*/
 
 .menu-primary-container ul {
     display: flex;
@@ -180,7 +247,12 @@ a {
     display: none;
 }
 
-/* footer */
+/*////////////////////////
+///                    ///
+/// footer.php styling ///
+///                    ///
+////////////////////////*/
+
 footer {
     width: 100vw;
     height: 170px;
@@ -219,7 +291,11 @@ footer li a:hover {
     text-decoration: underline;
 }
 
-/* home/front-page */
+/*////////////////////////////
+///                        ///
+/// front-page.php styling ///
+///                        ///
+////////////////////////////*/
 
 .welcome-con {
     width: 100vw;
@@ -332,7 +408,11 @@ footer li a:hover {
     color: var(--light);
 }
 
-/* about Page */
+/*///////////////////////
+///                   ///
+/// about.php styling ///
+///                   ///
+///////////////////////*/
 
 .about-con {
     max-width: 100vw;
@@ -397,7 +477,12 @@ footer li a:hover {
     margin-bottom: 2.5vw;
 }
 
-/* Adopt Page */
+/*///////////////////////
+///                   ///
+/// Adopt.php Styling ///
+///                   ///
+///////////////////////*/
+
 .adopt-con {
     padding: 0 0 5vw 0;
 }
@@ -460,7 +545,11 @@ footer li a:hover {
     display: none;
 }
 
-/* shop page */
+/*////////////////////////////////////////////
+///                                        ///
+/// woocommerce shop/cart/checkout styling ///
+///                                        ///
+////////////////////////////////////////////*/
 
 .woocommerce .products ul,
 .woocommerce ul.products {
@@ -641,13 +730,24 @@ footer li a:hover {
     bottom: 10vw;
 }
 
-/* large tablet  */
+/*//////////////////
+///              ///
+/// large tablet ///
+///              ///
+//////////////////*/
 
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+
     :root {
         font-size: 14px;
     }
 
+    /*////////////////////////
+    ///                    ///
+    /// Header.php styling ///
+    ///                    ///
+    ////////////////////////*/
+  
     .welcome-con {
         height: 60vh;
     }
@@ -675,6 +775,12 @@ footer li a:hover {
         align-items: center;
     }
 
+    /*////////////////////////////
+    ///                        ///
+    /// front-page.php styling ///
+    ///                        ///
+    ////////////////////////////*/
+
     .info-item-con {
         width: 33.333vw;
     }
@@ -693,7 +799,13 @@ footer li a:hover {
 
     .info-button a {
         font-size: 1rem;
-    }
+    }  
+
+    /*////////////////////////
+    ///                    ///
+    /// footer.php styling ///
+    ///                    ///
+    ////////////////////////*/
 
     footer {
         height: 150px;
@@ -704,7 +816,11 @@ footer li a:hover {
         font-size: 40px;
     }
 
-    /* about page */
+    /*///////////////////////
+    ///                   ///
+    /// about.php styling ///
+    ///                   ///
+    ///////////////////////*/
 
     .about-text-con {
         width: 60vw;
@@ -735,7 +851,12 @@ footer li a:hover {
         width: auto;
     }
 
-    /* adopt page */
+    /*///////////////////////
+    ///                   ///
+    /// Adopt.php Styling ///
+    ///                   ///
+    ///////////////////////*/
+
     .adopt-con {
         padding-bottom: 0;
     }
@@ -749,20 +870,34 @@ footer li a:hover {
         height: 40vw;
     }
 
-    /* checkout */
+    /*////////////////////////////////////////////
+    ///                                        ///
+    /// woocommerce shop/cart/checkout styling ///
+    ///                                        ///
+    ////////////////////////////////////////////*/
 
     .woocommerce-info {
         padding: 1rem 16vw;
     }
 }
 
-/* tablet sm */
+/*//////////////////
+///              ///
+/// Tablet Small ///
+///              ///
+//////////////////*/
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1023px) {
     :root {
         font-size: 14px;
     }
 
+    /*////////////////////////
+    ///                    ///
+    /// Header.php styling ///
+    ///                    ///
+    ////////////////////////*/
+    
     .welcome-con {
         height: 60vh;
     }
@@ -790,6 +925,12 @@ footer li a:hover {
         align-items: center;
     }
 
+    /*////////////////////////////
+    ///                        ///
+    /// front-page.php styling ///
+    ///                        ///
+    ////////////////////////////*/
+
     .info-item-con {
         width: 33.333vw;
     }
@@ -810,6 +951,12 @@ footer li a:hover {
         font-size: 1rem;
     }
 
+    /*////////////////////////
+    ///                    ///
+    /// footer.php styling ///
+    ///                    ///
+    ////////////////////////*/
+
     footer {
         height: 150px;
         margin-top: 5vw;
@@ -819,7 +966,11 @@ footer li a:hover {
         font-size: 40px;
     }
 
-    /* about page */
+    /*///////////////////////
+    ///                   ///
+    /// about.php styling ///
+    ///                   ///
+    ///////////////////////*/
 
     .about-text-con {
         width: 60vw;
@@ -850,7 +1001,12 @@ footer li a:hover {
         width: auto;
     }
 
-    /* adopt page */
+    /*///////////////////////
+    ///                   ///
+    /// Adopt.php Styling ///
+    ///                   ///
+    ///////////////////////*/
+    
     .adopt-con {
         padding-bottom: 0;
     }
@@ -864,6 +1020,12 @@ footer li a:hover {
         height: 60vw;
     }
 
+    /*////////////////////////////////////////////
+    ///                                        ///
+    /// woocommerce shop/cart/checkout styling ///
+    ///                                        ///
+    ////////////////////////////////////////////*/
+    
     .woocommerce-additional-fields {
         padding: 5vw 10vw;
     }
@@ -889,6 +1051,12 @@ footer li a:hover {
     }
 }
 
+/*////////////
+///        ///
+/// mobile ///
+///        ///
+////////////*/
+
 @media screen and (max-device-width: 767px) {
     :root {
         font-size: 14px;
@@ -898,7 +1066,12 @@ footer li a:hover {
         margin: 0 !important;
     }
 
-    /* header.php */
+    
+    /*////////////////////////
+    ///                    ///
+    /// Header.php styling ///
+    ///                    ///
+    ////////////////////////*/
 
     .hamburger-btn {
         display: flex;
@@ -1001,7 +1174,6 @@ footer li a:hover {
     .logo-con {
         display: flex;
         align-items: center;
-        /* justify-content: center; */
     }
 
     .nav-con.nav-active {
@@ -1018,7 +1190,11 @@ footer li a:hover {
         display: none;
     }
 
-    /* home page */
+    /*////////////////////////////
+    ///                        ///
+    /// front-page.php styling ///
+    ///                        ///
+    ////////////////////////////*/
 
     .hero-img-con {
         height: 100vh;
@@ -1057,7 +1233,11 @@ footer li a:hover {
         margin: 5vw 0;
     }
 
-    /* about page */
+    /*///////////////////////
+    ///                   ///
+    /// about.php styling ///
+    ///                   ///
+    ///////////////////////*/
 
     .about-con {
         flex-direction: column;
@@ -1095,8 +1275,12 @@ footer li a:hover {
     .about-list {
         list-style: none;
     }
-
-    /* adopt page */
+  
+    /*///////////////////////
+    ///                   ///
+    /// Adopt.php Styling ///
+    ///                   ///
+    ///////////////////////*/
 
     .adopt-img {
         height: 60vh;
@@ -1130,6 +1314,12 @@ footer li a:hover {
     .adopt-list {
         list-style: none;
     }
+
+    /*////////////////////////////////////////////
+    ///                                        ///
+    /// woocommerce shop/cart/checkout styling ///
+    ///                                        ///
+    ////////////////////////////////////////////*/
 
     .woocommerce-billing-fields {
         padding: 5vw 10vw;

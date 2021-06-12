@@ -1,9 +1,18 @@
 <?php
 
-// theme support
+/////////////////////
+///               ///
+/// theme support ///
+///               ///
+/////////////////////
+
 add_theme_support('woocommerce');
 
-// linking custom style sheets
+///////////////////////////////////
+///                             ///
+/// linking custom style sheets ///
+///                             ///
+///////////////////////////////////
 
 function custom_theme_assets() {
     wp_enqueue_style('kitten_inn_stylesheet', get_stylesheet_uri());
@@ -13,10 +22,20 @@ function custom_theme_assets() {
 
 add_action('wp_enqueue_scripts', 'custom_theme_assets');
 
-// register nav menu
+/////////////////////////
+///                   ///
+/// register nav menu ?//
+///                   ///
+/////////////////////////
+
 register_nav_menus( [ 'primary' => __( 'Primary Menu' )]);
 
-// generate special css
+///////////////////////////////////
+///                             ///
+/// WP Customizer colour picker ///
+///                             ///
+///////////////////////////////////
+
 function generate_special_css(){
     $color_picker = get_theme_mod('color_picker');
     $color_picker_sec = get_theme_mod('color_picker_sec');
@@ -32,15 +51,28 @@ function generate_special_css(){
         </style>
     <?php
 }
+
 add_action('wp_head', 'generate_special_css');
 
 function mytheme_customize_register($wp_customize) {
+    
+    /////////////////////////////
+    ///                       ///
+    /// WP Customizer Section ///
+    ///                       ///
+    /////////////////////////////
+
     $wp_customize->add_section("my_custom_section", array(
         "title" => __("Theme Colours", "customizer_custom_section"),
         "priority" => 20,
     ));
 
-    // ------------settings
+    //////////////////////
+    ///                ///
+    /// Primary Colour ///
+    ///                ///
+    //////////////////////
+
     $wp_customize->add_setting("color_picker", array(
         "default" => "#52b788",
         "transport" => "refresh"
@@ -52,9 +84,14 @@ function mytheme_customize_register($wp_customize) {
         'settings' => 'color_picker'
         )
     ));
+    
+    ////////////////////////
+    ///                  ///
+    /// Secondary Colour ///
+    ///                  ///
+    ////////////////////////
 
-      // ------------settings
-      $wp_customize->add_setting("color_picker_sec", array(
+    $wp_customize->add_setting("color_picker_sec", array(
         "default" => "#081c15",
         "transport" => "refresh"
     ));
@@ -66,23 +103,24 @@ function mytheme_customize_register($wp_customize) {
         )
     ));
 
+    ///////////////////////
+    ///                 ///
+    /// Tertiary Colour ///
+    ///                 ///
+    ///////////////////////
 
-      // ------------settings
-      $wp_customize->add_setting("color_picker_tri", array(
+    $wp_customize->add_setting("color_picker_tri", array(
         "default" => "#fff",
         "transport" => "refresh"
     ));
 
     $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, "color_picker_tri", array(
-        'label' => 'Third Colour',
+        'label' => 'Tertiary Colour',
         'section' => 'my_custom_section',
         'settings' => 'color_picker_tri'
         )
     ));
 
-    
-
-    
 }
 
 add_action("customize_register", "mytheme_customize_register");

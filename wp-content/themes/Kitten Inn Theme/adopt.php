@@ -19,14 +19,9 @@
             <p class="adopt-bodycopy">
                 When you adopt a pet you’re expanding your family, which is why they’re often referred to
                 as “fur babies”! It’s a big responsibility and should be a well thought out decision. Your home will be
-                your
-                pet’s forever home – once you adopt them, you are their family and there’s no going back. Pets are
-                family,
-                not
-                possessions that can be traded. If you’re ready to adopt a cat or kitten from us, that’s wonderful! Here
-                are
-                a
-                few things you should know.
+                your pet’s forever home – once you adopt them, you are their family and there’s no going back. Pets are family,
+                not possessions that can be traded. If you’re ready to adopt a cat or kitten from us, that’s wonderful! Here
+                are a few things you should know.
             </p>
         </div>
         <div class="adopt-section fade-in">
@@ -68,15 +63,9 @@
 
             <p class="adopt-bodycopy">
                 We need to charge a donation for each of our kittens to help cover costs and make sure that we can
-                continue
-                to
-                care for all the unwanted pregnant cats and kittens that come in and us. We are a registered
-                not-for-profit
-                charity run by a wonderful group of dedicated volunteers who put in many, many hours of their own free
-                time.
-                There are no paid staff members, so the money you donate when you adopt a kitten only covers the costs
-                listed
-                above.
+                continue to care for all the unwanted pregnant cats and kittens that come in and us. We are a registered
+                not-for-profit charity run by a wonderful group of dedicated volunteers who put in many, many hours of their own free
+                time. There are no paid staff members, so the money you donate when you adopt a kitten only covers the costs listed above.
             </p>
         </div>
 
