@@ -1,4 +1,4 @@
-/* Table Of content
+/* Table Of contents
 
     9       -       56      Custom Variables
     57      -       107     Global Edits & Animations 
@@ -112,6 +112,11 @@ ul {
 
 a {
     text-decoration: none;
+    color: var(--dark);
+}
+
+p,
+li {
     color: var(--dark);
 }
 
@@ -747,7 +752,7 @@ footer li a:hover {
     /// Header.php styling ///
     ///                    ///
     ////////////////////////*/
-  
+
     .welcome-con {
         height: 60vh;
     }
@@ -799,7 +804,7 @@ footer li a:hover {
 
     .info-button a {
         font-size: 1rem;
-    }  
+    }
 
     /*////////////////////////
     ///                    ///
@@ -897,7 +902,7 @@ footer li a:hover {
     /// Header.php styling ///
     ///                    ///
     ////////////////////////*/
-    
+
     .welcome-con {
         height: 60vh;
     }
@@ -1006,7 +1011,7 @@ footer li a:hover {
     /// Adopt.php Styling ///
     ///                   ///
     ///////////////////////*/
-    
+
     .adopt-con {
         padding-bottom: 0;
     }
@@ -1025,7 +1030,7 @@ footer li a:hover {
     /// woocommerce shop/cart/checkout styling ///
     ///                                        ///
     ////////////////////////////////////////////*/
-    
+
     .woocommerce-additional-fields {
         padding: 5vw 10vw;
     }
@@ -1066,7 +1071,7 @@ footer li a:hover {
         margin: 0 !important;
     }
 
-    
+
     /*////////////////////////
     ///                    ///
     /// Header.php styling ///
@@ -1275,7 +1280,7 @@ footer li a:hover {
     .about-list {
         list-style: none;
     }
-  
+
     /*///////////////////////
     ///                   ///
     /// Adopt.php Styling ///
